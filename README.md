@@ -1,2 +1,1 @@
-whileimbit.com
-==============
+This is the Jekyll based personal blog [whileimbit](http://whileimbit.com/).

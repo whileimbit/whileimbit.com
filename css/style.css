@@ -1,0 +1,137 @@
+@import url(http://fonts.googleapis.com/css?family=Galdeano);
+@import url(http://fonts.googleapis.com/css?family=Electrolize);
+@import url(http://fonts.googleapis.com/css?family=Cuprum);
+/*------------------------------------
+* @author whileimbit@gmail.com
+* @link http://whileimbit.com/
+* @update 2012-06-13
+* --------------------------------- */
+/*
+* Global
+*/
+body {
+  font-size: 14px;
+  font-family: "Galdeano",monospace, sans-serif;
+  color: #555;
+  background: #444; }
+
+h1, h2, h3, h4 {
+  font-family: "Cuprum"; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.8em; }
+
+/*
+* header
+*/
+#container > header {
+  background-color: #000;
+  -webkit-box-shadow: #999 0px 1px 4px;
+  -moz-box-shadow: #999 0px 1px 4px;
+  box-shadow: #999 1px 0px 4px;
+  font-family: "Cuprum";
+  color: #fff; }
+  #container > header #header {
+    width: 800px;
+    margin: 0 auto; }
+    #container > header #header h1 {
+      display: inline-block;
+      margin-right: 1em; }
+    #container > header #header nav {
+      display: inline-block;
+      text-transform: uppercase; }
+      #container > header #header nav a {
+        margin: 0.5em;
+        font-family: "Electrolize"; }
+  #container > header a, #container > header a:visited {
+    color: #d9d9d9;
+    text-decoration: none; }
+  #container > header a:hover {
+    color: #eee;
+    -webkit-transition: color .2s linear; }
+
+/*
+* body
+*/
+#main {
+  width: 800px;
+  background: #fff;
+  margin: 20px auto;
+  border: 1px solid #222;
+  padding: 20px;
+  line-height: 1.7em;
+  font-size: 1.1em; }
+  #main .content a, #main .content a:visited {
+    color: #cc0000;
+    text-decoration: none; }
+    #main .content a:hover, #main .content a:visited:hover {
+      color: #dd0000;
+      -webkit-transition: color .2s linear; }
+  #main .content .meta {
+    color: #c0c0c0; }
+    #main .content .meta .tags a {
+      color: #c0c0c0;
+      padding: .25em; }
+      #main .content .meta .tags a:hover {
+        color: #999999; }
+  #main .content .post {
+    margin-bottom: 2em; }
+  #main li.listing-item, #main li.listing-seperator {
+    list-style-type: none;
+    padding: 0; }
+    #main li.listing-item a, #main li.listing-seperator a {
+      padding: .2em 1em; }
+    #main li.listing-item time, #main li.listing-seperator time {
+      color: #999999; }
+  #main li.listing-seperator {
+    font-weight: bold; }
+  #main .title {
+    margin-top: 1em;
+    margin-bottom: .5em; }
+  #main blockquote {
+    display: block;
+    overflow: auto;
+    text-align: justify;
+    border-left: 4px solid #eeeeee;
+    margin: 1em 0em;
+    padding-left: 1.5em; }
+    #main blockquote p {
+      margin: 0;
+      padding: 0; }
+
+/*
+* footer
+*/
+footer {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #909090; }
+
+/*
+* effects
+*/
+.shadow {
+  -moz-box-shadow: 3px 3px 6px #000;
+  -webkit-box-shadow: 3px 3px 6px #000;
+  box-shadow: 2px 3px 6px #000; }
+
+.center {
+  text-align: center; }
+  .center a {
+    text-decoration: none; }
+
+.circle-wrapper:hover .circle {
+  background-color: #333333;
+  -webkit-transition: background-color .2s linear; }
+
+.circle {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  background-color: #ccc;
+  -moz-border-radius: 0.4em;
+  -webkit-border-radius: 0.4em; }
