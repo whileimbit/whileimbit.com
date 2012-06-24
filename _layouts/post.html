@@ -2,11 +2,9 @@
 layout: default
 ---
 
-<article class="content">
-  <section class="title">
+<article >
     <h2>{{ page.title }} </h2>
-  </section>
-  <section class="meta">
+  <p class="meta">
   <span class="time">
     <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
   </span>
@@ -17,12 +15,12 @@ layout: default
     {% endfor %}
   </span>
   {% endif %}
-  </section>
-  <section class="post">
+  </p>
+  <p class="post">
   {{ content }}
-  </section>
+  </p>
   {% if page.guid %}
-  <section class="comment">
+  <div class="comment">
   <div id="disqus_thread"></div>
   <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -37,6 +35,6 @@ layout: default
       })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </section>
+  </div>
   {% endif %}
 </article>

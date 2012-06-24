@@ -1,50 +1,38 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<!doctype html>
+<html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="Jie Ma" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     {% if page.title %}
     <title>{{ page.title }}</title>
     {% else %}
     <title>{{ site.name }}</title>
     {% endif %}
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link href="http://feeds.feedburner.com/whileimbit" rel="alternate" title="RSS feed" type="application/atom+xml" />
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     
-    <script type="text/javascript">
-	
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-32669214-1']);
-	  _gaq.push(['_trackPageview']);
-	
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	
-	</script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <div id="container">
-        <header>
-          <div id="header">
-            <h1><a title="{{ site.name }}" class="" href="/">{{ site.name }}</a></h1>
-            <nav>
-              <span><a title="archive" class="" href="/archive.html">archive</a></span>
-              <span><a title="tags" class="" href="/tags.html">tags</a></span>
-              <span><a title="about" class="" href="/about.html">about me</a></span>
-              <span><a title="blogroll" class="" href="/links.html">links</a></span>
-              <span><a title="subscribe me" class="" href="http://feeds.feedburner.com/whileimbit">feed</a></span>
-            </nav>
-        </header>
-        <div id="main" class="shadow">
-        {{ content }}
-        </div>
-        <footer>&copy; whileimbit | powered by <a href="https://github.com/mojombo/jekyll" title="jekyll">jekyll</a> | fork <a href="https://github.com/whileimbit/whileimbit.github.com">me</a></footer>
-      </div>
-    </div> <!--! end of #container -->
+    <div class="wrapper">
+      <header>
+        <h1><a title="home" class="" href="/">{{ site.name }}</a></h1>
+        <nav>
+          <span><a title="archive" class="" href="/archive.html">archive</a></span>
+          <span><a title="tags" class="" href="/tags.html">tags</a></span>
+          <span><a title="about" class="" href="/about.html">about me</a></span>
+          <span><a title="blogroll" class="" href="/links.html">links</a></span>
+          <span><a title="subscribe me" class="" href="http://feeds.feedburner.com/whileimbit">feed</a></span>
+        </nav>
+      </header>
+      <section>{{ content }}</section>
+    </div>
+    <footer>
+      <p>&copy; whileimbit | powered by <a href="https://github.com/mojombo/jekyll" title="jekyll">jekyll</a> | fork <a href="https://github.com/whileimbit/whileimbit.com">me</a></p>
+    </footer>
+    <script src="/javascripts/scale.fix.js"></script>
   </body>
 </html>

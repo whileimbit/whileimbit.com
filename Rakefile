@@ -23,8 +23,17 @@ task :clean do
 end
 
 desc 'Build site with Jekyll'
-task :generate => :clean do
-  `jekyll`
+task :generate do
+  sh 'rm -rf _site'
+  jekyll
+end
+
+def jekyll
+  # time to give me generation times
+  # I'm just curious about how long it takes
+  sh 'time jekyll'
+  # compass already configured via config.rb in root
+  sh 'compass compile'
 end
 
 desc 'Start server'
