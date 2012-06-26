@@ -9,6 +9,14 @@ tags:
   - tips
 ---
 
+### Updated@2012-06-26 23:00 +1000:
+
+It looks like sublime text 2 has official [doc](http://www.sublimetext.com/docs/2/osx_command_line.html) to support os x command line, I made it into /usr/local/bin/
+
+	ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/local/bin/
+
+***
+
 I used to run below command from terminal to open current projects in TextMate.
 
 	mate .
