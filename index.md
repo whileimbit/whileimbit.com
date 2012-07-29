@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div>
+<div class="content">
 {% for post in site.posts limit: 5 %}
 <article>
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>

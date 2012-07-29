@@ -58,10 +58,10 @@ task :new do
   end
 
   if future.to_i.zero?
-    filename = "#{Time.new.strftime('%Y-%m-%d')}-#{slug}.markdown"
+    filename = "#{Time.new.strftime('%Y-%m-%d')}-#{slug}.md"
   else
     stamp = Chronic.parse("in #{future} days").strftime('%Y-%m-%d')
-    filename = "#{stamp}-#{slug}.markdown"
+    filename = "#{stamp}-#{slug}.md"
   end
   uuid = `uuidgen | tr "[:upper:]" "[:lower:]" | tr -d "\n"`
   path = File.join(TARGET_DIR, filename)
