@@ -4,7 +4,5 @@ auto: true
 permalink: /:year/:month/:day/:title.html
 name: while(imbit){Jie Ma}
 exclude:
-  - start.sh
   - Rakefile
   - pids
-  - stop.sh
